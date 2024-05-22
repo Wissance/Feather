@@ -1,5 +1,10 @@
-const app = document.getElementById("wissance_feather_app");
-window.run = () => {
-    console.log("Windows run handler");
-    app.innerText="olololololo"
+import { Application } from "js/appBase.js"
+
+let application = new Application();
+
+window.onload = (event) => {
+    console.log("page was loaded");
+    // Restore/Create New Application Class
+    application.init();
+
 };
